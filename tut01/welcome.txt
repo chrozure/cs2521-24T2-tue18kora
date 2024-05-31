@@ -1,19 +1,22 @@
 Hello everyone and welcome to COMP2521 for 24T1!!
 
 My name is Harry, and I'm a fourth year studying Computer Science and Science (maths)!
-I will be your tutor for today - normally it will be Ilha.
+I will be your tutor for this term!
 
 This course is a step up from COMP1511, where we focus on
     ** how to write programs that scale **
 
-
+Content covered in this course will be used in basically every other COMP
+course and even in your interviews!!
 
 Admin stuff:
     - Course e-mail: cs2521@cse.unsw.edu.au
     - Course forum
     - Tutorials
     - Labs
+        ~ In KoraME307 (level 3 Ainsworth)
         ~ Some labs are handmarked!!
+        ~ Not as many autotests :(
     - Quizzes
     - Assignments
     - Final exam
@@ -27,3 +30,8 @@ Admin stuff:
 Icebreaker!
 Let's go around the classroom and say:
     - Name, year/degree, and the hardest thing for you in COMP1511
+
+Strings: 6
+Linked Lists: 6
+Pointers: 8
+Memory: 4

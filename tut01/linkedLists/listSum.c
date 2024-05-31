@@ -20,10 +20,10 @@ int main(void) {
     n2->next = n3;
 
     int sumWhile = listSumWhile(head);
-    printf("%d\n", sumWhile);
+    printf("List sum while: %d\n", sumWhile);
 
     int sumFor = listSumFor(head);
-    printf("%d\n", sumFor);
+    printf("List sum for: %d\n", sumFor);
 
     free(head);
     free(n2);
@@ -40,11 +40,21 @@ struct node *newNode(int val) {
 }
 
 int listSumWhile(struct node *n) {
+    int sum = 0;
 
-    return 0;
+    struct node *curr = n;
+    while (curr != NULL) {
+        sum += curr->value;
+        curr = curr->next;
+    }
+    return sum;
 }
 
 int listSumFor(struct node *n) {
 
-    return 0;
+    int sum = 0;
+    for (struct node *curr; curr != NULL; curr = curr->next) {
+        sum += curr->value;
+    }
+    return sum;
 }
