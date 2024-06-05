@@ -37,5 +37,16 @@ hasTwoSum(A, v):
 	        integer v
 	Output: true if A contains two elements that sum to v, false otherwise
 
+    for i = 0 .. n - 1:
+        for j = i + 1 .. n - 1:
+            if arr[i] + arr[j] == target:
+                return true
 
+
+Time complexity:
+    (n - 1) + (n - 2) + (n -3) + ... + 2 + 1
+    = 1/2 * n * (n - 1)
+    = 1/2 * n^2 - 1/2 * n
+    -> n^2 + n (renove coefficients)
+    -> O(n^2) (take dominant term)
 */

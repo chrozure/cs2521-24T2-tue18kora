@@ -33,5 +33,19 @@ void testListCountOdds(int values[], int size) {
 }
 
 int listCountOdds(struct node *list) {
-    return 0;
+    // base case - empty list
+    if (list == NULL) return 0;
+
+    // int numOddsInRestOfList = listCountOdds(list->next);
+    // // recursive case - value in current node is even
+    // if (list->value % 2 == 0) {
+    //     return numOddsInRestOfList;
+    // }
+
+    // // recursive case - value in current node is odd
+    // else {
+    //     return 1 + numOddsInRestOfList;
+    // }
+
+    return list->value % 2 + listCountOdds(list->next);
 }

@@ -1,7 +1,8 @@
 Hello everyone, and welcome to week 2!
 
 I didn't get to meet you all last week, so here is a little bit about me:
-    - My name is Harry, and I am a 4th year student studying Computer Science and Science (Mathematics)
+    - My name is Harry, and I am a 4th year student studying
+        Computer Science and Science (Mathematics)
 
 In this tutorial we will be looking at:
     - Recursion
@@ -23,22 +24,51 @@ So, what is recursion?
     a problem is solved by solving a small part of it first,
     and then leaving the rest of it as a smaller "subproblem"
 
+We have a problem: we need to climb the rainbow stairs
+    - Iterative
+        while I am not at the top:
+            take one step up
+
+    - Recursively:
+        if I am at the top:
+            do nothing, I am at the top!
+
+        otherwise, take one step up, and then
+        climb the rest of the stairs
+
 Why should we use recursion?
     - It can make our code look a lot simpler
     - Some problems are easier to solve when a recursive approach is used
     - Some programming languages do not have loops (you have to use recursion!)
-
-
-
+        e.g. Haskell
 
 Downsides of recursion:
-    -
+    - Could be memory intensive (if you go too far deep)
+    - Can be complicated
+    - Slow
 
+
+    fib(5) = fib(4) + fib(3)
+    fib(4) = fib(3) + fib(2)
+
+
+Linked lists and recurstion:
+    - You can think of a linked list as either:
+        - An empty list
+        - A single node, with the rest of the list
 
 
 Analysis of algorithms
 What is big-O?
     - A way of quantitatively describing how fast or slow an algorithm runs at scale
 
-
 How do we calculate it?
+    - e.g. T(n) = 3n^2 + 6n + log_2(n) steps
+
+    1. Remove the coefficients
+    -> n^2 + n + log(n)
+
+    2. Take the most dominant term
+    -> O(n^2)
+
+

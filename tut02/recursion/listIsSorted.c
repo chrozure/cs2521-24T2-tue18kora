@@ -36,5 +36,12 @@ void testListIsSorted(int values[], int size) {
 }
 
 bool listIsSorted(struct node *list) {
-    return false;
+    // base case - empty list or 1 node in list
+    if (list == NULL || list->next == NULL) return true;
+
+    // base case - current value is greater than next one
+    if (list->value > list->next->value) return false;
+
+    // recursive case - next value is greater than current value
+    return listIsSorted(list->next);
 }

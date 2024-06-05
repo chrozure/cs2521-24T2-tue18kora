@@ -11,6 +11,15 @@ int main(void) {
 
 void solveHanoi(int numDisks, char *fromRod, char *toRod, char *otherRod) {
 
-    printf("Move disk from rod %s to Rod %s", fromRod, toRod);
-    return;
+    // base case - no disks to move
+    if (numDisks == 0) return;
+
+    // move top n - 1 disks to otherRod
+    solveHanoi(numDisks - 1, fromRod, otherRod, toRod);
+
+    // move bottom disk to toRod
+    printf("Move disk from rod %s to Rod %s\n", fromRod, toRod);
+
+    // move top n - 1 disks to toRod
+    solveHanoi(numDisks - 1, otherRod, toRod, fromRod);
 }
