@@ -59,3 +59,19 @@ void merge(int A[], int lo, int mid, int hi) {
 	}
 	free(tmp);
 }
+
+
+
+/* merge(A, 0, 4, 9)
+
+nitems = 10
+
+A:
+{ 1, 2, 3, 4, 4, 5, 6, 7, 7, 9 }
+                 i         j
+
+tmp:
+{ 1, 2, 3, 4, 4, 5, 6, 7, 7, 9 }
+  k
+
+*/

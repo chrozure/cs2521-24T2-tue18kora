@@ -6,16 +6,16 @@ Bubble Sort:
             - swap them around
     - repeat until the array is sorted
 
-    - Best case:
-    - Worst case:
+    - Best case: O(n)
+    - Worst case: O(n^2)
 
 Insertion sort:
     - split the array into a sorted and unsorted part
     - iterate through the array, and at each element:
         - insert it into the sorted side by shifting it 1 at a time
 
-    - Best case:
-    - Worst case:
+    - Best case: O(n)
+    - Worst case: O(n^2)
 
 
 1. Sorted input
