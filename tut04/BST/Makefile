@@ -1,18 +1,18 @@
 CC = clang
 CFLAGS = -Wall -Wvla -Werror -g
 
-all: bstFunctions
+all: bstExercises
 
 ########################################################################
 
-bstFunctions: bstFunctions.o bst.o
-	$(CC) $(CFLAGS) -o bstFunctions bstFunctions.o bst.o
+bstExercises: bstExercises.o bst.o
+	$(CC) $(CFLAGS) -o bstExercises bstExercises.o bst.o
 
-bstFunctions.o: bstFunctions.c bst.h
+bstExercises.o: bstExercises.c bst.h
 
 bst.o: bst.c bst.h
 
 ########################################################################
 
 clean:
-	rm -rf *.o *.dSYM bstFunctions
+	rm -rf *.o *.dSYM bstExercises
