@@ -1,0 +1,19 @@
+      5
+     / \
+    /   \
+   /     \
+  3       8
+ / \     /  \
+1   4   7    9
+
+In-order:
+    -
+
+Pre-order:
+    -
+
+Post-order:
+    -
+
+Level-order:
+    -

@@ -35,10 +35,13 @@ int main(void) {
     printf("The tree has %d nodes\n", bstNumNodes(root));
     printf("The tree has %d odd values\n", bstCountOdds(root));
     printf("The tree has %d internal nodes\n", bstCountInternal(root));
-    printf("The height of the tree is %d\n", bstHeight(root));
-    int target = 3;
-    printf("The node level of %d is %d\n", target, bstNodeLevel(root, target));
-    printf("The number of nodes greater than %d is %d\n", target, bstCountGreater(root, 4));
+    printf("The height of the tree is %d\n\n", bstHeight(root));
+    int x = 3;
+    int y = 6;
+    printf("The node level of %d is %d\n", x, bstNodeLevel(root, x));
+    printf("The node level of %d is %d\n", y, bstNodeLevel(root, y));
+    printf("The number of nodes greater than %d is %d\n", x, bstCountGreater(root, x));
+    printf("The number of nodes greater than %d is %d\n", y, bstCountGreater(root, y));
 
     bstFree(root);
 }
