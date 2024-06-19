@@ -49,18 +49,42 @@ int main(void) {
 ///////////////////////////////////////////////////////
 
 int bstNumNodes(struct node *t) {
-    // TODO
-    return 0;
+    // base case - empty tree
+    if (t == NULL) return 0;
+
+    // recursive case - node, and two subtrees
+    return 1 + bstNumNodes(t->left) + bstNumNodes(t->right);
 }
 
 int bstCountOdds(struct node *t) {
-    // TODO
-    return 0;
+    // base case - empty tree
+    if (t == NULL) return 0;
+
+    return t->value % 2 + bstCountOdds(t->left) + bstCountOdds(t->right);
+    /*
+    int numOddsInLeft = bstCountOdds(t->left);
+    int numOddsInRight = bstCountOdds(t->right);
+
+    // recursive case - current value is odd
+    if (t->value % 2 == 1) {
+        return 1 + numOddsInLeft + numOddsInRight;
+    }
+    // recursive case - current value is even
+    else {
+        return numOddsInLeft + numOddsInRight;
+    }
+    */
 }
 
 int bstCountInternal(struct node *t) {
-    // TODO
-    return 0;
+    // base case - empty tree
+    if (t == NULL) return 0;
+
+    // base case - leaf node
+    if (t->left == NULL && t->right == NULL) return 0;
+
+    // recursive case - internal node
+    return 1 + bstCountInternal(t->left) + bstCountInternal(t->right);
 }
 
 int bstHeight(struct node *t) {
@@ -69,8 +93,24 @@ int bstHeight(struct node *t) {
 }
 
 int bstNodeLevel(struct node *t, int key) {
-    // TODO
-    return 0;
+    // base case - empty tree
+    if (t == NULL) return -1;
+
+    // base case - root value is equal to key
+    if (t->value == key) return 0;
+
+    // recursive case - key is less than root
+    if (key < t->value) {
+        int levelInLeftSubtree = bstNodeLevel(t->left, key);
+        // value didn't exist in left subtree
+        if (levelInLeftSubtree == -1) return -1;
+        return 1 + levelInLeftSubtree;
+    }
+
+    // recursive case - key is greater than root
+    int levelInRightSubtree = bstNodeLevel(t->right, key);
+    if (levelInRightSubtree == -1) return -1;
+    return 1 + levelInRightSubtree;
 }
 
 int bstCountGreater(struct node *t, int val) {

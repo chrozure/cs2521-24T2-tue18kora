@@ -5,15 +5,10 @@ These stand for: Abstract Data Types and Binary Search Trees
 
 
 Admin:
-    - You can get the handmarking for lab03 done
-        this week or next week
+    - You can get the handmarking for lab03 done this week or next week
     - There is some handmarking for this week's lab, but it is only worth 1/5.
     - Assignment 1 has been released! I think it is a
         super interesting assignment, and I'll try talk a bit about it if I have time (1% chance)
-
-
-
-
 
 
 
@@ -22,6 +17,9 @@ ADTs:
         where you are given an interface that describes
         how to use it, but you do not need to know
         how it is implemented "underneath the hood".
+
+    - e.g. driving a car
+    - e.g. stacks and queues
 
     - Why is this useful?
         - It allows you to think about problems at a "higher level"
@@ -32,7 +30,7 @@ BSTs:
     - Binary Search Trees are a new data type!
     - They aim to solve the problems that arrays
         and linked lists have:
-        - Arrays are not dynamic - you can't change their size
+        - Arrays are not dynamic - you can't change their size easily
         - Linked lists do not have random access - so you can't perform binary search
 
 
