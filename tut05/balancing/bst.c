@@ -56,6 +56,7 @@ static struct node *newNode(int val) {
 struct node *rotateRight(struct node *root) {
 	if (root == NULL || root->left == NULL)
 		return root;
+
 	struct node *newRoot = root->left;
 	root->left = newRoot->right;
 	newRoot->right = root;
@@ -64,8 +65,8 @@ struct node *rotateRight(struct node *root) {
 
 struct node *rotateLeft(struct node *root) {
 	if (root == NULL || root->right == NULL)
-
 		return root;
+
 	struct node *newRoot = root->right;
 	root->right = newRoot->left;
 	newRoot->left = root;

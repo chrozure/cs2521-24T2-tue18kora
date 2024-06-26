@@ -32,8 +32,7 @@ Graphs:
     - Graphs consist of vertices (nodes) and edges
         which connect the vertices
     - They are a more general version of trees, and
-        can be used to represent any sort of relationship
-        between things
+        can be used to represent any sort of relationship between things
     - e.g. Facebook, Google Maps, Structure of atoms in molecules
 
     - There are some important properties we can consider:
@@ -50,7 +49,7 @@ Graphs:
 Assignment 1 Tips / Q&A:
     - About the tasks:
         - Get task 1 done first, it is by far the easiest task, and it will
-            help you wrap your head around Huffman trees
+            help you wrap your head around the structure of Huffman trees
 
         - The rest of the tasks are all roughly the same difficulty.
             Task 2 must be done before task 3, but you can complete task 4 at anytime!
