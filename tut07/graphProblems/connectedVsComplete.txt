@@ -1,0 +1,9 @@
+A connected graph is:
+    -
+
+A complete graph is:
+    -
+
+Are either of these true?
+    - connected => complete
+    - complete => connected
