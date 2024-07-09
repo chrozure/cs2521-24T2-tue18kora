@@ -17,7 +17,7 @@ Example:
     - Inequalities:
         x_1 != x_4
         x_3 != x_4
-        x_1 != x_2
+        x_2 != x_1
         x_2 != x_5
 
 Is this system consistent?

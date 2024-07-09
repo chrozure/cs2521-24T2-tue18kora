@@ -10,7 +10,7 @@ assignment 2 will involve a lot of graph traversals.
 
 Admin:
     - You can get handmarking done for lab04, lab05 and lab07 (fully handmarked)
-    - Assignment 2 will be released tomorrow, and the lecture on
+    - Assignment 2 will be released this week, and the lecture on
         Thursday should give a brief introduction to it.
 
 

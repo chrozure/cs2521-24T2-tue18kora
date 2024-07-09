@@ -1,9 +1,10 @@
 A connected graph is:
-    -
+    - a graph, where for any two nodes u and v, there exists
+        a PATH from u to v
 
 A complete graph is:
-    -
+    - a graph, where for any two nodes u and v, there exists
+        an EDGE between u and v
 
-Are either of these true?
-    - connected => complete
+Note that:
     - complete => connected
