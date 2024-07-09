@@ -3,6 +3,7 @@
 
 struct graph {
     int nV;
+    int nE;
     int **edges;
 };
 

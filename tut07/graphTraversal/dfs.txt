@@ -19,16 +19,11 @@ dfs(G, src):
                 set predecessor of w to v
                 push w onto S
 
+
 For dfs(g, 0):
 
 #  Printed  visited                   pred                      Queue (front at left)
             0  1  2  3  4  5  6  7    0  1  2  3  4  5  6  7
 0     -     1  0  0  0  0  0  0  0    -  -  -  -  -  -  -  -
 1
-2
-3
-4
-5
-6
-7
-8
+
