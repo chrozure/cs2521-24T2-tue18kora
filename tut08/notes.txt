@@ -4,7 +4,7 @@ This week is the last week on graphs. We will be doing
 some more graph traversals, Dijkstra's Algorithm
 and then look at Minimum Spanning Trees.
 
-I will also spend a little bit of time looking through assignment 2.
+I will also try to give a bwoof introduction to assignment 2.
 
 Admin:
     - As always, there is handmarking to be done for
