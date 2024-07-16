@@ -4,6 +4,7 @@
 #include "Graph.h"
 
 Set reachable(Graph g, Vertex src);
+static void dfs(Graph g, Set s, Vertex v);
 
 int main(void) {
     Graph g = GraphNew(10);
@@ -31,7 +32,9 @@ int main(void) {
     GraphInsertEdge(g, 9, 7);
     GraphInsertEdge(g, 9, 8);
 
-    Set s = reachable(g, 0);
+    int src = 6;
+    Set s = reachable(g, src);
+    printf("Vertices reachable from %d: ", src);
     SetPrint(s);
 
     SetFree(s);
@@ -39,8 +42,21 @@ int main(void) {
     return 0;
 }
 
-
 Set reachable(Graph g, Vertex src) {
-    return NULL;
+    Set reached = SetNew();
+    dfs(g, reached, src);
+    return reached;
 }
 
+static void dfs(Graph g, Set s, Vertex v) {
+    // base case - already visited v
+    if (SetContains(s, v)) return;
+
+    // recursive case - visit the current vertex, and then recursively dfs on the neighbours
+    SetAdd(s, v);
+    for (int w = 0, n = GraphNumVertices(g); w < n; w++) {
+        if (g->edges[v][w]) {
+            dfs(g, s, w);
+        }
+    }
+}

@@ -1,6 +1,7 @@
 struct edge {
     int u;
     int v;
+	int weight;
 }
 
 typedef struct edge *Edge;

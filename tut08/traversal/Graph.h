@@ -3,6 +3,7 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
+// Adjacency matrix representation
 struct graph {
     int nV;
     int nE;
