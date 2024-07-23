@@ -1,14 +1,17 @@
             |   Advantages        |      Disadvantages
 ----------------------------------------------------------------
             |
-            |
-Hash tables |
-            |
+            |    efficient               might not terminate
+Hash tables |    average O(1)            O(n) insertion worst case
+            |    for insertion,          resizing is hard and O(n^2)
+            |    search and
+            |    deletion                Can waste memory
             |
 ----------------------------------------------------------------
             |
-            |
+            |   Always O(log n)             O(log n) is slower
 Balanced    |
-Search Trees|
-            |
+Search Trees|   Ordered
+            |   Only uses necessary
+            |    memory
             |

@@ -1,0 +1,63 @@
+Welcome to week 9! Hope you are all staying strong :)
+
+This week's tutorial and lab is about hash maps.
+
+They are one of the most widely used data structures, and are
+super important for technical interviews.
+
+As a challenge, you could re-implement your assignment 1 using one!
+
+Admin:
+    - This week's lab is the last one! And it is fully automarked.
+    - Handmarking for assignment 1 is also underway.
+        I have been procrastinating but it will be done by next week.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hash maps:
+    - Hash maps are an example of an associative data structure!
+        They use hash functions to map keys to indices.
+        Then in a hash table, we store a value
+    - Many programming languages have some sort of hash map implemented in it.
+    - In COMP2521, we explore how they are used and implemented underneath the hood.
+
+
+
+
+    - Motivating Example:
+        - Imagine you are UNSW, and you are trying to store your students'
+            marks so that you can look them up easily
+
+        - A "naive" solution is to store your information like this:
+            zids = { "z12345", "z98765", "z11111", ... }
+            marks = { 85, 57, 100, ... }
+
+            and loop through both arrays when you want to find someone's marks
+
+        - What is bad about this implementation?
+            - It is slow (requires a linear search which is O(n))
+            - Easy to mis-align something
+
+        - Idea: it would be really nice if we could do:
+            marks["z12345"] = 100
+
+        - We could use a hash function: int hash(data)
+            to have marks[hash("z12345")] = 100
+
+
+
+In Python, a hash map looks like this:
+marks = {
+    "z12345": 100,
+    "z98765": 57
+}
