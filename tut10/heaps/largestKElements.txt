@@ -2,13 +2,14 @@ a. A simple way to solve this problem is to sort the array in increasing order,
 and then the largest k elements would be the last k elements of the sorted array.
 What is the worst-case time complexity of this approach?
 
-
-
-
+The worst-case time complexity is dominated by the cost of sorting the array.
+Assuming we are using merge sort/heap sort, this is O(n log n).
 
 
 
 b. Come up with a more efficient method that uses a heap.
 What is the worst-case time complexity of this method?
 
-
+We can use a min heap and start deleting as soon as it contains more than k elements.
+In this way, the heap will contain the largest k elements we have seen so far.
+The worst case time complextiy for this approach is O(n log k).

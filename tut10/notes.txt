@@ -13,11 +13,10 @@ Admin:
     - The sample exam has been released, you can see it on webCMS
         - https://cgi.cse.unsw.edu.au/~cs2521/24T2/sample-exam
 
-    - The lab today will be used for revision, any final handmarking
+    - The lab today will be used for revision, any final handmarking,
         and also the exam demo.
 
-    - MyExperience is out! Please do it!
-
+    - MyExperience is out! Please do it! You get some cool perks if you do.
 
 
 MyExperience:
@@ -48,9 +47,10 @@ Heaps:
 
     - In this tutorial, we will be looking at max heaps. They have 2 properties:
         - Heap property:
-
+            - The value at every node is larger than the value of all its children
 
         - Completeness property:
+            - Every row is filled going from left to right.
 
 
 
