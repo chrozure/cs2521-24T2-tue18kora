@@ -1,0 +1,77 @@
+COMP2521 is almost over :(
+
+This week's tutorial content is on the last few data structures heaps and tries,
+but there are a lot of other important things to mention.
+
+
+Admin:
+    - Assignment 1 marking is finished and your marks should be out.
+        Please let me know if you have any questions about it.
+
+    - Assignment 2 is due this Friday at 8pm, good luck :)
+
+    - The sample exam has been released, you can see it on webCMS
+        - https://cgi.cse.unsw.edu.au/~cs2521/24T2/sample-exam
+
+    - The lab today will be used for revision, any final handmarking
+        and also the exam demo.
+
+    - MyExperience is out! Please do it!
+
+
+
+MyExperience:
+    - At 50% response rate, and every 5% after:
+        We will reveal the topic and mark value of a randomly chosen exam question
+        Topic/mark value of one questions revealed at 50%, 55%, 60%, 65%e, ...
+
+    - I have some snacks this week, which I will pass out to people who complete it
+
+
+
+
+
+Final exam:
+    - In the lab today, you have the opportunity to do
+        do an exam demo, where you experience the exam environment.
+
+    - Who wants to do it?
+
+
+
+Heaps:
+    - Heaps are an efficient tree-like data structure used to implement priority queues
+
+    - You would have seen priority queues before with Dijkstra's algorithm
+        or Prim's algorithm. They are like queues, except when you dequeue,
+        it returns the number with the most priority, instead of the first value.
+
+    - In this tutorial, we will be looking at max heaps. They have 2 properties:
+        - Heap property:
+
+
+        - Completeness property:
+
+
+
+Revision Kahoot:
+    - https://create.kahoot.it/share/comp2521-revision/9b46d3b1-ef58-47b6-8c27-55878d71f610
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Final words:
+    - Thank you everyone for the great term! This term has been very fun to teach :)
+
+    - Good luck with the exam, and I wish you all the best in the future!
